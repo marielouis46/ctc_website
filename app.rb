@@ -6,7 +6,7 @@ Bundler.require
 class HomePage < Sinatra::Base
 
 	def get_movie_list
-		["django", "friday", "home_alone", "smart_house", "spy_kids", "the_blind_side", "the_color_purple"]
+		["django", "friday", "home_alone", "smart_house", "spy_kids", "the_blind_side", "the_color_purple", "avatar", "star_wars", "transformers"]
 	end
 
 	def get_movie

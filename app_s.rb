@@ -6,7 +6,7 @@ Bundler.require
 class HomePage < Sinatra::Base
 
   def get_sport_list
-    ["archery", "basketball", "biathlon", "cricket", "football", "ice_hockey", "lacrosse", "golf", "ultamite_frisbe"]
+    ["archery", "basketball", "biathlon", "cricket", "football", "ice_hockey", "lacrosse", "golf", "ultimate_frisbee", "fencing"]
   end
 
   def get_sport

@@ -6,7 +6,7 @@ Bundler.require
 class HomePage < Sinatra::Base
 
   def get_actor_list
-    ["adam_sandler", "chris_rock", "cuba_gooding_jr", "jhonny_depp", "kevin_hart", "emma_stone", "reese_witherspoon"]
+    ["adam_sandler", "chris_rock", "cuba_gooding_jr", "johnny_depp", "kevin_hart", "emma_stone", "reese_witherspoon", "kerry_washington", "sofia_vergara", "viola_davis"]
   end
 
   def get_actor
