@@ -35,7 +35,7 @@ class HomePage < Sinatra::Base
       erb :index_a, :locals => {:actor => @@current_actor, :guess => guess, :answer => answer}
     elsif guess.downcase != answer.downcase
       alert = "you got it wrong!"
-      erb :index_m, :locals => {:movie => @@current_movie, :guess => guess, :answer => answer}
+      erb :index_a, :locals => {:actor => @@current_actor, :guess => guess, :answer => answer}
     else guess.downcase == answer.downcase
       alert = "you got it right!"
       erb :index_a, :locals => {:actor => get_actor, :guess => guess, :answer => answer}
