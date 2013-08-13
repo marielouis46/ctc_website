@@ -33,10 +33,10 @@ class HomePage < Sinatra::Base
 		guess = params["answer"]
 		if guess.nil?
 			erb :index_m, :locals => {:movie => @@current_movie, :guess => guess, :answer => answer}
-		elsif guess != answer
-			alert = "you got it wrong!"
-			erb :index_m, :locals => {:movie => @@current_movie, :guess => guess, :answer => answer}
-		else guess == answer
+    elsif guess.downcase != answer.downcase
+      alert = "you got it wrong!"
+      erb :index_m, :locals => {:movie => @@current_movie, :guess => guess, :answer => answer}
+    else guess.downcase == answer.downcase
 			alert = "you got it right!"
 			erb :index_m, :locals => {:movie => get_movie, :guess => guess, :answer => answer}
 		end
