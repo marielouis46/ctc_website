@@ -1,0 +1,17 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Movies</title>
+</head>
+	<body bgcolor="E6B800">
+	<font color="8A00B8"><center><h1>Can you guess this Movie??</h1><center></font>
+	<% movie[:imgs].each do |image| %>
+	  <img src="<%= image %>" />
+	<% end %>
+	<form method="post">
+		Answer: <input type"text" name="answer">
+		<input type='submit' value='Submit'>
+	</form>
+	<a href='/mode'><center><font color="FFFFFF">Wanna Do Something Else?<font><center></a>
+</body>
+</html>

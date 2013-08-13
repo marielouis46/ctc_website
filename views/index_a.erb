@@ -1,0 +1,18 @@
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Actors and Actresses</title>
+</head>
+  <body bgcolor="#977497">
+  <font color="#10A610"><center><h1>Can you guess who the Actor or Actresse is??</h1><center></font>
+
+  <% actor[:imgs].each do |image| %>
+    <img src="<%= image %>" />
+  <% end %>
+  <form method="post">
+    Answer: <input type"text" name="answer">
+    <input type='submit' value='Submit'>
+  </form>
+    <a href='/mode'><center><font color="FFFFFF">Wanna Do Something Else?<font><center></a>
+</body>
+</html>
